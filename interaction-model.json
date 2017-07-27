@@ -1,0 +1,85 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "Start",
+      "samples": []
+    },
+    {
+      "name": "GetInformation",
+      "samples": [
+        "Information",
+        "Info",
+        "Infos",
+        "Informationen",
+        "allgemeine Informationen",
+        "Einleitung",
+        "über den Tag der Niedersachsen"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetProgram",
+      "samples": [
+        "Programm",
+        "Programmübersicht",
+        "Öffnungszeiten",
+        "Übersicht"
+      ],
+      "slots": [
+        {
+          "name": "Tag",
+          "type": "DAYS",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "DAYS",
+      "values": [
+        {
+          "id": "FRIDAY",
+          "name": {
+            "value": "Freitag",
+            "synonyms": [
+              "erster Tag"
+            ]
+          }
+        },
+        {
+          "id": "SATURDAY",
+          "name": {
+            "value": "Samstag",
+            "synonyms": [
+              "Sonnabend",
+              "zweiter Tag"
+            ]
+          }
+        },
+        {
+          "id": "SUNDAY",
+          "name": {
+            "value": "Sonntag",
+            "synonyms": [
+              "dritter Tag",
+              "letzter Tag"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

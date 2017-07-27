@@ -1,0 +1,41 @@
+{
+  "name": "tdn-app",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src/",
+    "build": "npx -p node-bin@6 webpack",
+    "aws-update": "./build/update.sh"
+  },
+  "keywords": [],
+  "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.11",
+    "deepmerge": "^1.5.0",
+    "dotenv": "^4.0.0"
+  },
+  "devDependencies": {
+    "aws-lambda-mock-context": "^3.1.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "webpack": "^3.4.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-0"
+    ]
+  }
+}
