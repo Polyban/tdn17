@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alexa TDN should handle LaunchRequest 1`] = `
+exports[`Request handler introHandler should return the right response 1`] = `
 Object {
   "response": Object {
     "card": Object {
