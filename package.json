@@ -14,13 +14,18 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^3.0.0",
+    "deepmerge": "^1.5.0",
     "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "aws-lambda-mock-context": "^3.1.1",
     "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0",
@@ -36,7 +41,8 @@
   },
   "babel": {
     "presets": [
-      ["env", { "targets": { "node": 6 } }]
+      "stage-0",
+      ["env", { "targets": { "node": "6.10" } }]
     ]
   }
 }

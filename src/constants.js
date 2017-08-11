@@ -9,6 +9,8 @@ export const INTRO_CARD_TITLE = 'Willkommen zum 35. Tag der Niedersachsen im Jah
 export const INTRO_CARD_TEXT = 'Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.'
 
 export const INFORMATION_MAIN_UTTERANCE = 'Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.'
+export const INFORMATION_CARD_TITLE = 'Allgemeine Informationen'
+export const INFORMATION_CARD_CONTENT = INFORMATION_MAIN_UTTERANCE
 
 export const PROGRAM_INTRO_UTTERANCE = 'Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.'
 export const PROGRAM_DAY_PROMPT_UTTERANCE = 'Welcher Tag interessiert Dich?'

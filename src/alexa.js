@@ -1,16 +1,33 @@
 import createLogger from 'debug'
 
-const debug = createLogger('alexa')
+const debug = createLogger('alexa:sdk')
 
-export function handleRequest(requestHandlers, selector) {
+export function createRequestHandler(requestHandlers, selector) {
   return (event) => {
     const selectedHandler = selector(requestHandlers, event)
 
-    debug(
-      'Calling handler \'%s\'\n  Session: %o\n  Request: %o',
-      /^function (\w+)/.exec(selectedHandler)[1],
-      { new: event.session.new, attributes: event.session.attributes },
-      { type: event.request.type, intent: event.request.intent }
+    let handlerName = '<Unknown handler name>'
+    const match = /^function (\w+)/.exec(selectedHandler)
+    if (match) {
+      handlerName = match[0]
+    } else if (selectedHandler.displayName) {
+      handlerName = selectedHandler.displayName
+    }
+
+    debug(`Calling handler '${handlerName}'`)
+    debug('Session: %s',
+      JSON.stringify(
+        { new: event.session.new, attributes: event.session.attributes }
+      )
+    )
+    debug('Request: %s',
+      JSON.stringify(
+        {
+          type: event.request.type,
+          intent: event.request.intent,
+          dialogState: event.request.dialogState
+        }
+      )
     )
 
     return selectedHandler(event)
@@ -58,7 +75,8 @@ class AlexaResponse {
       reprompt: {
         outputSpeech: null,
       },
-      shouldEndSession: true,
+      shouldEndSession: false,
+      directives: []
     }
   }
 
@@ -85,11 +103,22 @@ class AlexaResponse {
     return this
   }
 
+  elicitSlot(slotToElicit) {
+    this.props.directives = [
+      {
+        type: 'Dialog.ElicitSlot',
+        slotToElicit
+      }
+    ]
+    return this
+  }
+
   valueOf() {
-    const { outputSpeech, card, reprompt, shouldEndSession } = this.props
+    const { outputSpeech, card, reprompt, shouldEndSession, directives } = this.props
     const response = {
       outputSpeech,
       shouldEndSession,
+      directives
     }
     if (reprompt.outputSpeech !== null) {
       response.reprompt = reprompt
@@ -101,6 +130,10 @@ class AlexaResponse {
   }
 }
 
-export function say(outputResponse) {
-  return new AlexaResponse().say(outputResponse)
+export function say(speechOutput) {
+  return new AlexaResponse().say(speechOutput)
+}
+
+export function elicit(speechOutput, slotToElicit) {
+  return new AlexaResponse().say(speechOutput).elicitSlot(slotToElicit)
 }

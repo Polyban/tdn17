@@ -11,11 +11,18 @@
     }
   },
   "request": {
-    "type": "SessionEndedRequest",
-    "requestId": "EdwRequestId.00000000-0000-0000-0000-000000000000",
-    "reason": "USER_INITIATED",
-    "locale": "de-DE",
-    "timestamp": "2017-01-00T00:00:00Z"
+    "type": "IntentRequest",
+    "intent": {
+      "name": "GetProgram",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "Tag": {
+          "name": "Tag",
+          "confirmationStatus": "NONE"
+        }
+      }
+    },
+    "dialogState": "STARTED"
   },
   "context": {
     "AudioPlayer": {

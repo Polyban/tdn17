@@ -12,6 +12,7 @@ Object {
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
       "type": "Standard",
     },
+    "directives": Array [],
     "outputSpeech": Object {
       "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
@@ -21,6 +22,26 @@ Object {
         "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
         "type": "SSML",
       },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {},
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should invoke IntentRequest 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "title": "Allgemeine Informationen",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "type": "PlainText",
     },
     "shouldEndSession": false,
   },

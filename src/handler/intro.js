@@ -7,30 +7,30 @@ import {
 import { wrapIn } from '../util'
 import { say } from '../alexa'
 
-export default function introHandler() {
-  const version = '1.0'
-  const sessionAttributes = {}
-  const speechOutput = [
-    INTRO_UTTERANCE,
-    INTRO_PROMPT_UTTERANCE,
-  ].map(wrapIn('p')).join('')
-  const repromptText = INTRO_PROMPT_UTTERANCE
+export default function introHandler(type = 'full') {
+  const typedIntroHandler = () => {
+    const speechOutput = [
+      INTRO_PROMPT_UTTERANCE,
+    ]
+    if (type === 'full') {
+      speechOutput.unshift(INTRO_UTTERANCE)
+    }
+    const repromptText = INTRO_PROMPT_UTTERANCE
 
-  const response = say(speechOutput)
-    .card(
-      'Standard',
-      INTRO_CARD_TITLE,
-      INTRO_CARD_TEXT,
-      'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png',
-      'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png'
-    )
-    .reprompt(repromptText)
-    .end(false)
-    .valueOf()
-
-  return {
-    version,
-    sessionAttributes,
-    response,
+    return {
+      response: say(speechOutput.map(wrapIn('p')).join(''))
+        .card(
+          'Standard',
+          INTRO_CARD_TITLE,
+          INTRO_CARD_TEXT,
+          'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png',
+          'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png'
+        )
+        .reprompt(repromptText)
+        .end(false)
+        .valueOf()
+    }
   }
+  typedIntroHandler.displayName = `${type}IntroHandler`
+  return typedIntroHandler
 }
