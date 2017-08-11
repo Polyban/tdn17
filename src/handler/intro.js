@@ -21,7 +21,7 @@ export default function introHandler() {
       INTRO_CARD_TITLE,
       INTRO_CARD_TEXT,
       'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png',
-      'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png',
+      'https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png'
     )
     .reprompt(repromptText)
     .end(false)

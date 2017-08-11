@@ -30,7 +30,7 @@ export function handleRequest(requestHandlers, selector) {
       'Calling handler \'%s\'\n  Session: %o\n  Request: %o',
       /^function (\w+)/.exec(selectedHandler)[1],
       { new: event.session.new, attributes: event.session.attributes },
-      { type: event.request.type, intent: event.request.intent },
+      { type: event.request.type, intent: event.request.intent }
     )
 
     return selectedHandler(event)

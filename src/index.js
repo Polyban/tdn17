@@ -33,7 +33,7 @@ export function handler(event, context) {
         introHandler,
         sessionEndedHandler,
       },
-      selectHandler,
+      selectHandler
     )(event)
     context.succeed(response)
   } catch (err) {
