@@ -3,7 +3,7 @@ import {
   introHandler,
   sessionEndedHandler,
 } from './handler'
-import { handleRequest } from './util'
+import { handleRequest } from './alexa'
 
 dotenv()
 

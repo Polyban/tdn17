@@ -4,7 +4,8 @@ import {
   INTRO_CARD_TITLE,
   INTRO_CARD_TEXT,
 } from '../constants'
-import { wrapIn, say } from '../util'
+import { wrapIn } from '../util'
+import { say } from '../alexa'
 
 export default function introHandler() {
   const version = '1.0'

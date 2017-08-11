@@ -1,7 +1,8 @@
 import {
   SESSION_ENDED_UTTERANCE,
 } from '../constants'
-import { wrapIn, say } from '../util'
+import { wrapIn } from '../util'
+import { say } from '../alexa'
 
 export default function sessionEndedHandler() {
   const version = '1.0'
