@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest src/",
-    "build": "npx -p node-bin@6 webpack",
+    "build": "webpack",
     "aws:publish": "./build/publish.sh",
     "aws:update": "npm run build && npm run aws:publish"
   },
@@ -13,13 +13,14 @@
   "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
   "license": "ISC",
   "dependencies": {
+    "debug": "^3.0.0",
     "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "aws-lambda-mock-context": "^3.1.1",
+    "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0",
@@ -35,8 +36,7 @@
   },
   "babel": {
     "presets": [
-      "latest",
-      "stage-0"
+      ["env", { "targets": { "node": 6 } }]
     ]
   }
 }

@@ -4,9 +4,13 @@ exports[`Alexa TDN should handle LaunchRequest 1`] = `
 Object {
   "response": Object {
     "card": Object {
-      "content": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
+      "image": Object {
+        "largeImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png",
+        "smallImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png",
+      },
+      "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
-      "type": "Simple",
+      "type": "Standard",
     },
     "outputSpeech": Object {
       "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",

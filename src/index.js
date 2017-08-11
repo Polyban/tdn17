@@ -3,21 +3,19 @@ import {
   introHandler,
   sessionEndedHandler,
 } from './handler'
+import { handleRequest } from './util'
 
 dotenv()
 
-function handleRequest(event) {
+export function selectHandler(handlers, event) {
   const { session, request } = event
-  if (session.new) {
-    // currentHandler = introHandler
-  }
 
   if (session.new || request.type === 'LaunchRequest') {
-    return introHandler(session, request)
+    return handlers.introHandler
   }
 
   if (request.type === 'SessionEndedRequest') {
-    return sessionEndedHandler(session, request)
+    return handlers.sessionEndedHandler
   }
 
   // if (request.type === 'IntentRequest') {
@@ -25,12 +23,18 @@ function handleRequest(event) {
   // }
 
   // unhandled default
-  return sessionEndedHandler(session, request)
+  return handlers.sessionEndedHandler
 }
 
 export function handler(event, context) {
   try {
-    const response = handleRequest(event)
+    const response = handleRequest(
+      {
+        introHandler,
+        sessionEndedHandler,
+      },
+      selectHandler,
+    )(event)
     context.succeed(response)
   } catch (err) {
     context.fail(err)

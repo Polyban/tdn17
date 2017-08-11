@@ -6,7 +6,7 @@ export const SESSION_ENDED_UTTERANCE = 'Auf Wiedersehen.'
 export const INTRO_UTTERANCE = 'Willkommen zum 35. "Tag der Niedersachsen" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.'
 export const INTRO_PROMPT_UTTERANCE = 'Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.'
 export const INTRO_CARD_TITLE = 'Willkommen zum 35. Tag der Niedersachsen im Jahr 2017'
-export const INTRO_CARD_CONTENT = 'Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.'
+export const INTRO_CARD_TEXT = 'Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.'
 
 export const INFORMATION_MAIN_UTTERANCE = 'Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.'
 
