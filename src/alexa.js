@@ -137,3 +137,22 @@ export function say(speechOutput) {
 export function elicit(speechOutput, slotToElicit) {
   return new AlexaResponse().say(speechOutput).elicitSlot(slotToElicit)
 }
+
+function getCanonicalSlotResolution(slot) {
+  if (!slot.resolutions || !slot.resolutions.resolutionsPerAuthority
+    || !slot.resolutions.resolutionsPerAuthority.length) {
+    return null
+  }
+  const resolution = slot.resolutions.resolutionsPerAuthority[0]
+  if (resolution.status.code !== 'ER_SUCCESS_MATCH') {
+    return null
+  }
+  return resolution.values[0].value
+}
+
+export function getSlot(slots, slotName) {
+  if (!slots || !slots[slotName] || typeof slots[slotName].value === 'undefined') {
+    return null
+  }
+  return getCanonicalSlotResolution(slots[slotName])
+}

@@ -12,9 +12,9 @@ dotenv()
 const debug = createLogger('alexa:index')
 
 export function selectHandler(handlers, event) {
-  const { session, request } = event
+  const { request } = event
 
-  if (session.new || request.type === 'LaunchRequest') {
+  if (request.type === 'LaunchRequest') {
     return handlers.LaunchRequest
   }
 
