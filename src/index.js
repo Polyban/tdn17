@@ -1,9 +1,62 @@
-var Alexa = require('alexa-sdk')
-var handlers = require('./handlers')
+import { config as dotenv } from 'dotenv'
+import createLogger from 'debug'
+import {
+  introHandler,
+  sessionEndedHandler,
+  informationHandler,
+  programHandler
+} from './handler'
+import { createRequestHandler } from './alexa'
 
-exports.handler = function(event, context, callback) {
-  var alexa = Alexa.handler(event, context, callback)
-  alexa.appId = process.env.APP_ID
-  alexa.registerHandlers(handlers)
-  alexa.execute()
+dotenv()
+const debug = createLogger('alexa:index')
+
+export function selectHandler(handlers, event) {
+  const { request } = event
+
+  if (request.type === 'LaunchRequest') {
+    return handlers.LaunchRequest
+  }
+
+  if (request.type === 'SessionEndedRequest') {
+    return handlers.SessionEndedRequest
+  }
+
+  if (request.type === 'IntentRequest') {
+    if (!handlers[request.intent.name]) {
+      throw new Error(`Could not find a handler for intent '${request.intent.name}'`)
+    }
+    return handlers[request.intent.name]
+  }
+
+  // unhandled default
+  return handlers.sessionEndedHandler
+}
+
+const requestHandler = createRequestHandler(
+  {
+    LaunchRequest: introHandler('full'),
+    SessionEndedRequest: sessionEndedHandler,
+    GetInformation: informationHandler,
+    GetProgram: programHandler,
+    'AMAZON.StopIntent': sessionEndedHandler,
+    'AMAZON.CancelIntent': introHandler('short')
+  },
+  selectHandler
+)
+
+export function handler(event, context) {
+  try {
+    const response = {
+      version: '1.0',
+      sessionAttributes: {},
+      ...requestHandler(event)
+    }
+
+    debug('Response: %s', JSON.stringify(response))
+
+    context.succeed(response)
+  } catch (err) {
+    context.fail(err)
+  }
 }

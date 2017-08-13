@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alexa should add Simple card() 1`] = `
+Object {
+  "card": Object {
+    "content": "Card content",
+    "title": "Card title",
+    "type": "Standard",
+  },
+  "directives": Array [],
+  "outputSpeech": Object {
+    "text": "Test utterance",
+    "type": "PlainText",
+  },
+  "shouldEndSession": false,
+}
+`;
+
+exports[`Alexa should add Standard card() 1`] = `
+Object {
+  "card": Object {
+    "image": Object {
+      "largeImageUrl": "http://large-image-url",
+      "smallImageUrl": "http://small-image-url",
+    },
+    "text": "Card text",
+    "title": "Card title",
+    "type": "Standard",
+  },
+  "directives": Array [],
+  "outputSpeech": Object {
+    "text": "Test utterance",
+    "type": "PlainText",
+  },
+  "shouldEndSession": false,
+}
+`;
+
+exports[`Alexa should build a response using end() 1`] = `
+Object {
+  "directives": Array [],
+  "outputSpeech": Object {
+    "text": "Test utterance",
+    "type": "PlainText",
+  },
+  "shouldEndSession": false,
+}
+`;
+
+exports[`Alexa should build a response using say() 1`] = `
+Object {
+  "directives": Array [],
+  "outputSpeech": Object {
+    "text": "Test utterance",
+    "type": "PlainText",
+  },
+  "shouldEndSession": false,
+}
+`;
+
+exports[`Alexa should build a response using say() in SSML 1`] = `
+Object {
+  "directives": Array [],
+  "outputSpeech": Object {
+    "ssml": "<speak><p>Test utterance</p></speak>",
+    "type": "SSML",
+  },
+  "shouldEndSession": false,
+}
+`;
+
+exports[`Alexa should reprompt() 1`] = `
+Object {
+  "directives": Array [],
+  "outputSpeech": Object {
+    "text": "Test utterance",
+    "type": "PlainText",
+  },
+  "reprompt": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Reprompt utterance</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "shouldEndSession": false,
+}
+`;

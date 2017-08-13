@@ -1,48 +1,21 @@
-import index from '../index'
 import context from 'aws-lambda-mock-context'
-import lauchRequest from '../__mock__/launch-request'
-import getInformationRequest from '../__mock__/get-information-request'
-import getProgramRequest from '../__mock__/get-program-request'
-import merge from 'deepmerge'
+import { handler as lambda } from '../'
+import launchRequest from '../__mock__/launch-request.json'
+import informationRequest from '../__mock__/information-request.json'
 
-process.env.APP_ID = lauchRequest.session.application.applicationId
-
-describe('Alexa TDN17 lamdba', () => {
-  it('should respond to a LaunchRequest', () => {
+describe('Alexa TDN', () => {
+  it('should handle LaunchRequest', () => {
     const ctx = context()
-    index.handler(lauchRequest, ctx)
-    return ctx.Promise.then(({ response }) => {
+    lambda(launchRequest, ctx)
+    return ctx.Promise.then((response) => {
       expect(response).toMatchSnapshot()
     })
   })
 
-  it('should respond to GetInformation request', () => {
+  it('should invoke IntentRequest', () => {
     const ctx = context()
-    index.handler(getInformationRequest, ctx)
-    return ctx.Promise.then(({ response }) => {
-      expect(response).toMatchSnapshot()
-    })
-  })
-
-  it('should respond to GetProgram request', () => {
-    const ctx = context()
-    index.handler(getProgramRequest, ctx)
-    return ctx.Promise.then(({ response }) => {
-      expect(response).toMatchSnapshot()
-    })
-  })
-
-  it('should respond to GetProgram request with day parameter', () => {
-    const ctx = context()
-    index.handler(
-      merge(getProgramRequest, {
-        request: {
-          intent: { slots: { Tag: { name: 'Tag', value: 'freitag' } } }
-        }
-      }),
-      ctx
-    )
-    return ctx.Promise.then(({ response }) => {
+    lambda(informationRequest, ctx)
+    return ctx.Promise.then((response) => {
       expect(response).toMatchSnapshot()
     })
   })

@@ -2,7 +2,10 @@
   "intents": [
     {
       "name": "AMAZON.CancelIntent",
-      "samples": []
+      "samples": [
+        "zurück",
+        "zurück zum Menü"
+      ]
     },
     {
       "name": "AMAZON.HelpIntent",
@@ -10,10 +13,6 @@
     },
     {
       "name": "AMAZON.StopIntent",
-      "samples": []
-    },
-    {
-      "name": "Start",
       "samples": []
     },
     {
@@ -35,13 +34,17 @@
         "Programm",
         "Programmübersicht",
         "Öffnungszeiten",
-        "Übersicht"
+        "Übersicht",
+        "Programm vom {Tag}"
       ],
       "slots": [
         {
           "name": "Tag",
           "type": "DAYS",
-          "samples": []
+          "samples": [
+            "{Tag}",
+            "Programm für {Tag}"
+          ]
         }
       ]
     }
@@ -53,7 +56,7 @@
         {
           "id": "FRIDAY",
           "name": {
-            "value": "Freitag",
+            "value": "freitag",
             "synonyms": [
               "erster Tag"
             ]
@@ -62,7 +65,7 @@
         {
           "id": "SATURDAY",
           "name": {
-            "value": "Samstag",
+            "value": "samstag",
             "synonyms": [
               "Sonnabend",
               "zweiter Tag"
@@ -72,7 +75,7 @@
         {
           "id": "SUNDAY",
           "name": {
-            "value": "Sonntag",
+            "value": "sonntag",
             "synonyms": [
               "dritter Tag",
               "letzter Tag"
@@ -81,5 +84,39 @@
         }
       ]
     }
-  ]
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-GetProgram.IntentSlot-Tag",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Welcher Tag interessiert Dich?"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "GetProgram",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Tag",
+            "type": "DAYS",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetProgram.IntentSlot-Tag"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

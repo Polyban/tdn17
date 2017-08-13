@@ -1,29 +1,36 @@
 {
-  "name": "tdn-app",
-  "version": "1.0.1",
+  "name": "tdn-app-nosdk",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest src/",
-    "build": "npx -p node-bin@6 webpack",
-    "aws-update": "./build/update.sh"
+    "build": "webpack",
+    "aws:publish": "./build/publish.sh",
+    "aws:update": "npm run build && npm run aws:publish"
   },
   "keywords": [],
   "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
   "license": "ISC",
   "dependencies": {
-    "alexa-sdk": "^1.0.11",
+    "debug": "^3.0.0",
     "deepmerge": "^1.5.0",
     "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "aws-lambda-mock-context": "^3.1.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
     "jest": "^20.0.4",
-    "jest-cli": "^20.0.4",
-    "webpack": "^3.4.1",
+    "webpack": "^3.5.2",
     "webpack-node-externals": "^1.6.0"
   },
   "jest": {
@@ -34,8 +41,8 @@
   },
   "babel": {
     "presets": [
-      "latest",
-      "stage-0"
+      "stage-0",
+      ["env", { "targets": { "node": "6.10" } }]
     ]
   }
 }

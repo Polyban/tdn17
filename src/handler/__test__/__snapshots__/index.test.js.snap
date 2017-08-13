@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request handler should run informationHandler 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "title": "Allgemeine Informationen",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {},
+}
+`;
+
+exports[`Request handler should run introHandler 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png",
+        "smallImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png",
+      },
+      "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
+      "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+}
+`;
+
+exports[`Request handler should run programHandler 1`] = `
+Object {
+  "response": Object {
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+}
+`;
+
+exports[`Request handler should run programHandler with filled slot 1`] = `
+Object {
+  "response": Object {
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+}
+`;
+
+exports[`Request handler should run sessionEndedHandler 1`] = `
+Object {
+  "response": Object {
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Auf Wiedersehen.</p></speak>",
+      "type": "SSML",
+    },
+    "shouldEndSession": true,
+  },
+  "sessionAttributes": Object {},
+  "version": "1.0",
+}
+`;

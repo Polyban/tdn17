@@ -1,53 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alexa TDN17 lamdba should respond to GetInformation request 1`] = `
+exports[`Alexa TDN should handle LaunchRequest 1`] = `
 Object {
-  "outputSpeech": Object {
-    "ssml": "<speak> 
-      <p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.</p>
-      <p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p>
-      <p>Wünschen sie mehr Informationen zum Programm, sagen sie <emphasis>Programm</emphasis>.</p>
-     </speak>",
-    "type": "SSML",
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png",
+        "smallImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png",
+      },
+      "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
+      "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
   },
-  "shouldEndSession": true,
+  "sessionAttributes": Object {},
+  "version": "1.0",
 }
 `;
 
-exports[`Alexa TDN17 lamdba should respond to GetProgram request 1`] = `
+exports[`Alexa TDN should invoke IntentRequest 1`] = `
 Object {
-  "outputSpeech": Object {
-    "ssml": "<speak> 
-        <p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p>
-        <p>Für welchen Tag interessieren Sie sich?</p>
-        <p>Sagen Sie <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</p>
-       </speak>",
-    "type": "SSML",
+  "response": Object {
+    "card": Object {
+      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "title": "Allgemeine Informationen",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": false,
   },
-  "shouldEndSession": true,
-}
-`;
-
-exports[`Alexa TDN17 lamdba should respond to GetProgram request with day parameter 1`] = `
-Object {
-  "outputSpeech": Object {
-    "ssml": "<speak> Am freitag gibt es Würstchen. </speak>",
-    "type": "SSML",
-  },
-  "shouldEndSession": true,
-}
-`;
-
-exports[`Alexa TDN17 lamdba should respond to a LaunchRequest 1`] = `
-Object {
-  "outputSpeech": Object {
-    "ssml": "<speak> 
-      <p>Willkommen zum <say-as interpret-as=\\"ordinal\\">35.</say-as> Tag der Niedersachsen 2017.</p>
-      <p>Ich habe allgemeine Informationen oder eine Programmübersicht.</p>
-      <p>Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis></p>
-     </speak>",
-    "type": "SSML",
-  },
-  "shouldEndSession": true,
+  "sessionAttributes": Object {},
+  "version": "1.0",
 }
 `;
