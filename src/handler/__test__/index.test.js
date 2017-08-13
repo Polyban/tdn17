@@ -37,7 +37,10 @@ describe('Request handler', () => {
       value: 'freitag',
       resolutions: {
         resolutionsPerAuthority: [
-          { values: [{ value: { id: 'FRIDAY' } }] }
+          {
+            status: { code: 'ER_SUCCESS_MATCH' },
+            values: [{ value: { id: 'FRIDAY' } }]
+          }
         ]
       }
     }

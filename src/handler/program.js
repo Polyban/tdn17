@@ -1,15 +1,23 @@
 import createLogger from 'debug'
 import {
-  programDayUtterances,
   PROGRAM_INTRO_UTTERANCE,
   PROGRAM_DAY_PROMPT_UTTERANCE,
   PROGRAM_DAY_REPROMPT_UTTERANCE,
-  INTRO_PROMPT_UTTERANCE
+  INTRO_PROMPT_UTTERANCE,
+  PROGRAM_DAY_INTRO_UTTERANCE_FRIDAY,
+  PROGRAM_DAY_INTRO_UTTERANCE_SATURDAY,
+  PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
 } from '../constants'
 import { wrapIn } from '../util'
 import { say, elicit, getSlot } from '../alexa'
 
 const debug = createLogger('alexa:GetProgram')
+
+const daySpecificUtterances = {
+  FRIDAY: PROGRAM_DAY_INTRO_UTTERANCE_FRIDAY,
+  SATURDAY: PROGRAM_DAY_INTRO_UTTERANCE_SATURDAY,
+  SUNDAY: PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
+}
 
 export default function programHandler({ request }) {
   const { slots } = request.intent
@@ -41,7 +49,7 @@ export default function programHandler({ request }) {
   debug('Requested canonicalSlot=%o', slot)
 
   // build output and emit
-  const speechOutput = programDayUtterances[slot.id]
+  const speechOutput = daySpecificUtterances[slot.id]
     .concat(INTRO_PROMPT_UTTERANCE)
     .map(wrapIn('p')).join('')
 

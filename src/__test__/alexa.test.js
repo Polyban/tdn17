@@ -1,4 +1,4 @@
-import { say } from '../alexa'
+import { say, elicit, getSlot } from '../alexa'
 
 describe('Alexa', () => {
   it('should build a response using say()', () => {
@@ -37,5 +37,32 @@ describe('Alexa', () => {
   it('should build a response using end()', () => {
     const response = say('Test utterance').end(false)
     expect(response.valueOf()).toMatchSnapshot()
+  })
+
+  it('should build a response using elicit()', () => {
+    const response = elicit('Test elicit utterance', 'SlotName')
+    expect(response.valueOf()).toMatchSnapshot()
+  })
+
+  describe('util', () => {
+    it('should getSlot', () => {
+      const mockSlots = {
+        Slot: {
+          name: 'Slot',
+          value: 'slotValue',
+          resolutions: {
+            resolutionsPerAuthority: [
+              {
+                status: { code: 'ER_SUCCESS_MATCH' },
+                values: [{ value: { id: 'SLOT_ID' } }]
+              }
+            ]
+          }
+        }
+      }
+      const slot = getSlot(mockSlots, 'Slot')
+      expect(slot).toMatchSnapshot()
+      expect(getSlot(mockSlots, 'AnotherSlot')).toMatchSnapshot()
+    })
   })
 })

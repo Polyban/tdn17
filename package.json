@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest src/",
+    "lint": "eslint src/",
     "build": "webpack",
     "aws:publish": "./build/publish.sh",
     "aws:update": "npm run build && npm run aws:publish"

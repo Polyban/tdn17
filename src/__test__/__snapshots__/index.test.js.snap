@@ -49,3 +49,23 @@ Object {
   "version": "1.0",
 }
 `;
+
+exports[`Alexa TDN should invoke IntentRequest on new session 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "title": "Allgemeine Informationen",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {},
+  "version": "1.0",
+}
+`;

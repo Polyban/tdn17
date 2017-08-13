@@ -74,21 +74,10 @@ Object {
 exports[`Request handler should run programHandler with filled slot 1`] = `
 Object {
   "response": Object {
-    "directives": Array [
-      Object {
-        "slotToElicit": "Tag",
-        "type": "Dialog.ElicitSlot",
-      },
-    ],
+    "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
-    },
-    "reprompt": Object {
-      "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
-        "type": "SSML",
-      },
     },
     "shouldEndSession": false,
   },

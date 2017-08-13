@@ -36,6 +36,22 @@ Object {
 }
 `;
 
+exports[`Alexa should build a response using elicit() 1`] = `
+Object {
+  "directives": Array [
+    Object {
+      "slotToElicit": "SlotName",
+      "type": "Dialog.ElicitSlot",
+    },
+  ],
+  "outputSpeech": Object {
+    "text": "Test elicit utterance",
+    "type": "PlainText",
+  },
+  "shouldEndSession": false,
+}
+`;
+
 exports[`Alexa should build a response using end() 1`] = `
 Object {
   "directives": Array [],
@@ -85,3 +101,11 @@ Object {
   "shouldEndSession": false,
 }
 `;
+
+exports[`Alexa util should getSlot 1`] = `
+Object {
+  "id": "SLOT_ID",
+}
+`;
+
+exports[`Alexa util should getSlot 2`] = `null`;
