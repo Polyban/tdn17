@@ -3,19 +3,19 @@
 exports[`Request handler should run informationHandler 1`] = `
 Object {
   "response": Object {
-    "card": Object {
-      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "title": "Allgemeine Informationen",
-      "type": "Standard",
-    },
     "directives": Array [],
     "outputSpeech": Object {
-      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "type": "PlainText",
+      "ssml": "<speak><p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
     },
     "shouldEndSession": false,
   },
-  "sessionAttributes": Object {},
 }
 `;
 
@@ -24,8 +24,8 @@ Object {
   "response": Object {
     "card": Object {
       "image": Object {
-        "largeImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.3x.png",
-        "smallImageUrl": "https://s3-eu-west-1.amazonaws.com/tdn17/01-home.2x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
       },
       "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",

@@ -34,4 +34,20 @@ describe('Alexa TDN', () => {
       expect(response).toMatchSnapshot()
     })
   })
+
+  it.only('should flow into Information and back', () => {
+    const stepOne = () => {
+      const ctx = context()
+      lambda(launchRequest, ctx)
+      return ctx.Promise
+    }
+    const stepTwo = () => {
+      const ctx = context()
+      lambda(informationRequest, ctx)
+      return ctx.Promise
+    }
+    stepOne().then(stepTwo).then((response) => {
+      expect(response).toMatchSnapshot()
+    })
+  })
 })

@@ -1,23 +1,21 @@
 import {
   INFORMATION_MAIN_UTTERANCE,
-  INFORMATION_CARD_TITLE,
-  INFORMATION_CARD_CONTENT
+  INTRO_PROMPT_UTTERANCE
 } from '../constants'
+import { wrapIn } from '../util'
 import { say } from '../alexa'
 
 export default function informationHandler() {
-  const sessionAttributes = {}
-  const response = say(INFORMATION_MAIN_UTTERANCE)
-    .card(
-      'Simple',
-      INFORMATION_CARD_TITLE,
-      INFORMATION_CARD_CONTENT
-    )
+  const speechOutput = [
+    INFORMATION_MAIN_UTTERANCE,
+    INTRO_PROMPT_UTTERANCE
+  ].map(wrapIn('p')).join('')
+  const response = say(speechOutput)
+    .reprompt(INTRO_PROMPT_UTTERANCE)
     .end(false)
     .valueOf()
 
   return {
-    sessionAttributes,
     response
   }
 }
