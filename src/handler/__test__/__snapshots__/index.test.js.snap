@@ -24,8 +24,8 @@ Object {
   "response": Object {
     "card": Object {
       "image": Object {
-        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
-        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png",
       },
       "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
@@ -76,8 +76,8 @@ Object {
   "response": Object {
     "card": Object {
       "image": Object {
-        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
-        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png",
       },
       "text": "
     16:00 bis 20:00 Uhr Festmeile
