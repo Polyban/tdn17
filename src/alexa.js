@@ -36,7 +36,7 @@ export function createRequestHandler(requestHandlers, selector) {
 
 function cardSimple(title, content) {
   return {
-    type: 'Standard',
+    type: 'Simple',
     title,
     content,
   }
@@ -91,10 +91,18 @@ class AlexaResponse {
   }
 
   card(type = 'Simple', ...cardProps) {
-    this.props.card = {
-      cardSimple,
-      cardStandard,
-    }[`card${type}`](...cardProps)
+    /* eslint prefer-rest-params: 0 */
+    const cardObject = arguments[0]
+    if (typeof cardObject === 'object') {
+      // set card props directly
+      this.props.card = cardObject
+    } else {
+      // use card creator function to create card from arguments
+      this.props.card = {
+        cardSimple,
+        cardStandard,
+      }[`card${type}`](...cardProps)
+    }
     return this
   }
 

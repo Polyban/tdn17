@@ -3,7 +3,9 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   entry: {
-    index: path.resolve('src/index.js'),
+    index: [
+      'babel-polyfill', path.resolve('src/index.js')
+    ],
   },
   output: {
     path: path.join(__dirname, 'build'),

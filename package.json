@@ -14,6 +14,7 @@
   "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "debug": "^3.0.0",
     "deepmerge": "^1.5.0",
     "dotenv": "^4.0.0"
@@ -43,7 +44,14 @@
   "babel": {
     "presets": [
       "stage-0",
-      ["env", { "targets": { "node": "6.10" } }]
+      [
+        "env",
+        {
+          "targets": {
+            "node": "6.10"
+          }
+        }
+      ]
     ]
   }
 }

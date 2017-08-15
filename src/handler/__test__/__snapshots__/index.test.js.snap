@@ -74,10 +74,29 @@ Object {
 exports[`Request handler should run programHandler with filled slot 1`] = `
 Object {
   "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+      },
+      "text": "
+    16:00 bis 20:00 Uhr Festmeile
+
+    16:00 bis 24:00 Uhr Bühnenprogramm
+    ",
+      "title": "Programm für Freitag, 1. September",
+      "type": "Standard",
+    },
     "directives": Array [],
     "outputSpeech": Object {
       "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
     },
     "shouldEndSession": false,
   },

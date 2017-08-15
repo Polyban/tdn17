@@ -5,7 +5,7 @@ Object {
   "card": Object {
     "content": "Card content",
     "title": "Card title",
-    "type": "Standard",
+    "type": "Simple",
   },
   "directives": Array [],
   "outputSpeech": Object {
