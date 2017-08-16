@@ -27,7 +27,7 @@ Object {
         "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png",
         "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png",
       },
-      "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
+      "text": "Sage \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
       "type": "Standard",
     },
@@ -89,12 +89,12 @@ Object {
     },
     "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Welcher Tag interessiert Dich?</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
       "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
         "type": "SSML",
       },
     },
@@ -108,12 +108,13 @@ Object {
   "response": Object {
     "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Auf Wiedersehen.</p></speak>",
-      "type": "SSML",
+      "text": "Auf Wiedersehen.",
+      "type": "PlainText",
     },
     "shouldEndSession": true,
   },
-  "sessionAttributes": Object {},
-  "version": "1.0",
+  "sessionAttributes": Object {
+    "STATE": "",
+  },
 }
 `;

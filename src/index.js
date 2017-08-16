@@ -2,11 +2,12 @@ import { config as dotenv } from 'dotenv'
 import createLogger from 'debug'
 import {
   introHandler,
+  helpHandler,
   sessionEndedHandler,
   informationHandler,
   programHandler
 } from './handler'
-import { createRequestHandler } from './alexa'
+import { createRequestHandler, withState } from './alexa'
 
 dotenv()
 const debug = createLogger('alexa:index')
@@ -35,12 +36,13 @@ export function selectHandler(handlers, event) {
 
 const requestHandler = createRequestHandler(
   {
-    LaunchRequest: introHandler('full'),
+    LaunchRequest: withState(introHandler('full'), 'INTRO'),
+    GetInformation: withState(informationHandler, 'INTRO'),
+    GetProgram: withState(programHandler, 'PROGRAM'),
     SessionEndedRequest: sessionEndedHandler,
-    GetInformation: informationHandler,
-    GetProgram: programHandler,
     'AMAZON.StopIntent': sessionEndedHandler,
-    'AMAZON.CancelIntent': introHandler('short')
+    'AMAZON.CancelIntent': withState(introHandler('short'), 'INTRO'),
+    'AMAZON.HelpIntent': withState(helpHandler, 'INTRO')
   },
   selectHandler
 )

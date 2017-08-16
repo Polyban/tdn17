@@ -18,24 +18,27 @@
     {
       "name": "GetInformation",
       "samples": [
-        "Information",
-        "Info",
-        "Infos",
-        "Informationen",
-        "allgemeine Informationen",
+        "nach Informationen",
+        "nach Information",
+        "über den Tag der Niedersachsen",
+        "nach Info",
+        "nach Infos",
+        "nach allgemeinen Informationen",
         "Einleitung",
-        "über den Tag der Niedersachsen"
+        "Information"
       ],
       "slots": []
     },
     {
       "name": "GetProgram",
       "samples": [
-        "Programm",
+        "nach dem Programm für {Tag}",
+        "nach dem Programm von {Tag}",
+        "nach dem Programm vom {Tag}",
+        "nach dem Programm",
         "Programmübersicht",
         "Öffnungszeiten",
-        "Übersicht",
-        "Programm vom {Tag}"
+        "Übersicht"
       ],
       "slots": [
         {
@@ -43,7 +46,9 @@
           "type": "DAYS",
           "samples": [
             "{Tag}",
-            "Programm für {Tag}"
+            "Programm für {Tag}",
+            "Programm von {Tag}",
+            "Programm vom {Tag}"
           ]
         }
       ]

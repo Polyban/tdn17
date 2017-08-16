@@ -3,7 +3,6 @@ import {
   PROGRAM_INTRO_UTTERANCE,
   PROGRAM_DAY_PROMPT_UTTERANCE,
   PROGRAM_DAY_REPROMPT_UTTERANCE,
-  INTRO_PROMPT_UTTERANCE,
   PROGRAM_DAY_INTRO_UTTERANCE_FRIDAY,
   PROGRAM_DAY_INTRO_UTTERANCE_SATURDAY,
   PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
@@ -57,7 +56,7 @@ export default function programHandler({ request }) {
 
   // build output and emit
   const speechOutput = daySpecificUtterances[slot.id]
-    .concat(INTRO_PROMPT_UTTERANCE)
+    .concat(PROGRAM_DAY_PROMPT_UTTERANCE)
     .map(wrapIn('p')).join('')
 
   const cardProps = daySpecificCards[`PROGRAM_CARD_${slot.id}`]
@@ -65,7 +64,7 @@ export default function programHandler({ request }) {
   return {
     response: say(speechOutput)
       .card(cardProps)
-      .reprompt(INTRO_PROMPT_UTTERANCE)
+      .reprompt(PROGRAM_DAY_REPROMPT_UTTERANCE)
       .valueOf()
   }
 }

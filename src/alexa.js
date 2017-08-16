@@ -1,10 +1,18 @@
 import createLogger from 'debug'
+import merge from 'deepmerge'
 
 const debug = createLogger('alexa:sdk')
 
 export function createRequestHandler(requestHandlers, selector) {
   return (event) => {
-    const selectedHandler = selector(requestHandlers, event)
+    const canonizedEvent = merge(
+      {
+        session: { attributes: {}, new: true },
+        request: { type: 'LaunchRequest' }
+      },
+      event
+    )
+    const selectedHandler = selector(requestHandlers, canonizedEvent)
 
     let handlerName = '<Unknown handler name>'
     const match = /^function (\w+)/.exec(selectedHandler)
@@ -17,20 +25,30 @@ export function createRequestHandler(requestHandlers, selector) {
     debug(`Calling handler '${handlerName}'`)
     debug('Session: %s',
       JSON.stringify(
-        { new: event.session.new, attributes: event.session.attributes }
+        { new: canonizedEvent.session.new, attributes: canonizedEvent.session.attributes }
       )
     )
     debug('Request: %s',
       JSON.stringify(
         {
-          type: event.request.type,
-          intent: event.request.intent,
-          dialogState: event.request.dialogState
+          type: canonizedEvent.request.type,
+          intent: canonizedEvent.request.intent,
+          dialogState: canonizedEvent.request.dialogState
         }
       )
     )
 
-    return selectedHandler(event)
+    const result = selectedHandler(canonizedEvent)
+    return typeof canonizedEvent.session.attributes.STATE !== 'undefined'
+      ? merge(
+        {
+          sessionAttributes: {
+            STATE: canonizedEvent.session.attributes.STATE
+          }
+        },
+        result
+      )
+      : result
   }
 }
 
@@ -163,4 +181,14 @@ export function getSlot(slots, slotName) {
     return null
   }
   return getCanonicalSlotResolution(slots[slotName])
+}
+
+export function withState(handler, state) {
+  return (...args) => {
+    const result = handler(...args)
+    return merge(
+      result,
+      { sessionAttributes: { STATE: state } }
+    )
+  }
 }

@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alexa TDN should exit when canceled from intro 1`] = `
+Object {
+  "response": Object {
+    "directives": Array [],
+    "outputSpeech": Object {
+      "text": "Auf Wiedersehen.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
+  "version": "1.0",
+}
+`;
+
 exports[`Alexa TDN should flow into Information and back 1`] = `
 Object {
   "response": Object {
@@ -16,7 +33,9 @@ Object {
     },
     "shouldEndSession": false,
   },
-  "sessionAttributes": Object {},
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
   "version": "1.0",
 }
 `;
@@ -26,10 +45,10 @@ Object {
   "response": Object {
     "card": Object {
       "image": Object {
-        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/logo.large.png",
-        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/logo.small.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png",
       },
-      "text": "Sage Informationen für Allgemeine Informationen oder Programm für eine Programmübersicht.",
+      "text": "Sage \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
       "type": "Standard",
     },
@@ -46,7 +65,9 @@ Object {
     },
     "shouldEndSession": false,
   },
-  "sessionAttributes": Object {},
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
   "version": "1.0",
 }
 `;
@@ -54,19 +75,22 @@ Object {
 exports[`Alexa TDN should invoke IntentRequest 1`] = `
 Object {
   "response": Object {
-    "card": Object {
-      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "title": "Allgemeine Informationen",
-      "type": "Standard",
-    },
     "directives": Array [],
     "outputSpeech": Object {
-      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "type": "PlainText",
+      "ssml": "<speak><p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
     },
     "shouldEndSession": false,
   },
-  "sessionAttributes": Object {},
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
   "version": "1.0",
 }
 `;
@@ -74,19 +98,74 @@ Object {
 exports[`Alexa TDN should invoke IntentRequest on new session 1`] = `
 Object {
   "response": Object {
-    "card": Object {
-      "content": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "title": "Allgemeine Informationen",
-      "type": "Standard",
-    },
     "directives": Array [],
     "outputSpeech": Object {
-      "text": "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.",
-      "type": "PlainText",
+      "ssml": "<speak><p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
     },
     "shouldEndSession": false,
   },
-  "sessionAttributes": Object {},
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should invoke help intent 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "
+  Sage \\"Informationen\\" für allgemeine Informationen oder \\"Programm\\" für das Programm.
+
+  Du kannst zum Beispiel das Programm für einen bestimmten Tag aufrufen, indem Du sagst:
+
+
+  \\"Alexa, frage Tag der Niedersachsen nach dem Programm für Freitag\\"
+",
+      "title": "Hilfe",
+      "type": "Simple",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak>Rufe Informationen oder das Programm ab, indem Du sagst: <break/> <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+      "type": "SSML",
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should not exit when canceled from intro 1`] = `
+Object {
+  "response": Object {
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
   "version": "1.0",
 }
 `;
