@@ -45,8 +45,8 @@ Object {
   "response": Object {
     "card": Object {
       "image": Object {
-        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png",
-        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
       },
       "text": "Sage \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
       "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
@@ -122,7 +122,11 @@ exports[`Alexa TDN should invoke help intent 1`] = `
 Object {
   "response": Object {
     "card": Object {
-      "content": "
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-help.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-help.1x.png",
+      },
+      "text": "
   Sage \\"Informationen\\" für allgemeine Informationen oder \\"Programm\\" für das Programm.
 
   Du kannst zum Beispiel das Programm für einen bestimmten Tag aufrufen, indem Du sagst:
@@ -131,7 +135,7 @@ Object {
   \\"Alexa, frage Tag der Niedersachsen nach dem Programm für Freitag\\"
 ",
       "title": "Hilfe",
-      "type": "Simple",
+      "type": "Standard",
     },
     "directives": Array [],
     "outputSpeech": Object {

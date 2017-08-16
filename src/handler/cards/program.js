@@ -6,8 +6,8 @@ export const PROGRAM_CARD_FRIDAY = {
     16:00 bis 24:00 Uhr Bühnenprogramm
     `,
   image: {
-    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png',
-    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png'
+    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png',
+    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.2x.png'
   }
 }
 
@@ -20,8 +20,8 @@ export const PROGRAM_CARD_SATURDAY = {
     11:00 Uhr Offizielle Eröffnungsfeier auf der Bühne vor dem Rathaus.
   `,
   image: {
-    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png',
-    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png'
+    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.1x.png',
+    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.2x.png'
   }
 }
 
@@ -35,7 +35,7 @@ export const PROGRAM_CARD_SUNDAY = {
     15:30 Uhr Beginn des Trachten- und Festumzugs
   `,
   image: {
-    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png',
-    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png'
+    smallImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.1x.png',
+    largeImageUrl: 'https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.2x.png'
   }
 }

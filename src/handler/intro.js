@@ -35,8 +35,8 @@ export default function introHandler(type = 'full') {
         'Standard',
         INTRO_CARD_TITLE,
         INTRO_CARD_TEXT,
-        'https://tdn17.s3-eu-west-1.amazonaws.com/card.1x.png',
-        'https://tdn17.s3-eu-west-1.amazonaws.com/card.2x.png'
+        'https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png',
+        'https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png'
       )
     }
 
