@@ -8,7 +8,7 @@ import {
   PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
 } from '../constants'
 import { wrapIn } from '../util'
-import { say, elicit, getSlot } from '../alexa'
+import { elicit, getSlot } from '../alexa'
 import { PROGRAM_CARD_FRIDAY, PROGRAM_CARD_SATURDAY, PROGRAM_CARD_SUNDAY } from './cards'
 
 const debug = createLogger('alexa:GetProgram')
@@ -62,7 +62,7 @@ export default function programHandler({ request }) {
   const cardProps = daySpecificCards[`PROGRAM_CARD_${slot.id}`]
 
   return {
-    response: say(speechOutput)
+    response: elicit(speechOutput, 'Tag')
       .card(cardProps)
       .reprompt(PROGRAM_DAY_REPROMPT_UTTERANCE)
       .valueOf()

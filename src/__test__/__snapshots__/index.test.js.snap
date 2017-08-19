@@ -72,6 +72,218 @@ Object {
 }
 `;
 
+exports[`Alexa TDN should handle dialog in and out program 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+      },
+      "text": "Sage \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
+      "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
+      "type": "Standard",
+    },
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should handle dialog in and out program 2`] = `
+Object {
+  "response": Object {
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "PROGRAM",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should handle dialog in and out program 3`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.1x.png",
+      },
+      "text": "
+    10:00 Uhr Ökumenischer Gottesdienst auf der Bühne vor dem Rathaus.
+
+    11:00 bis 18:00 Uhr Festmeile
+
+    11:00 bis 19:00 Uhr Bühnenprogramm
+
+    15:30 Uhr Beginn des Trachten- und Festumzugs
+  ",
+      "title": "Programm für Sonntag, 3. September",
+      "type": "Standard",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Sonntag, 3. September</p><p>10 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Ökumenischer Gottesdienst</p><p>11 bis 18 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>11 bis 19 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Bühnenprogramm</p><p>15:30 Uhr <break time=\\"100ms\\" /> Beginn des Trachten- und Festumzugs</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "PROGRAM",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should handle dialog in and out program 4`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
+      },
+      "text": "
+    16:00 bis 20:00 Uhr Festmeile
+
+    16:00 bis 24:00 Uhr Bühnenprogramm
+    ",
+      "title": "Programm für Freitag, 1. September",
+      "type": "Standard",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "PROGRAM",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should handle dialog in and out program 5`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.1x.png",
+      },
+      "text": "
+    10:00 bis 20:00 Uhr Festmeile
+
+    10:00 bis 24:00 Uhr Bühnenprogramm
+
+    11:00 Uhr Offizielle Eröffnungsfeier auf der Bühne vor dem Rathaus.
+  ",
+      "title": "Programm für Samstag, 2. September",
+      "type": "Standard",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Programm für Samstag, 2. September</p><p>10 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>10 bis 24 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Bühnenprogramm</p><p>11:00 Uhr <break time=\\"100ms\\" /> Offizielle Eröffnungsfeier</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "PROGRAM",
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Alexa TDN should handle dialog in and out program 6`] = `
+Object {
+  "response": Object {
+    "directives": Array [],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "STATE": "INTRO",
+  },
+  "version": "1.0",
+}
+`;
+
 exports[`Alexa TDN should invoke IntentRequest 1`] = `
 Object {
   "response": Object {

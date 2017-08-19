@@ -1,10 +1,10 @@
-import merge from 'deepmerge'
 import {
   introHandler,
   sessionEndedHandler,
   informationHandler,
   programHandler
 } from '../'
+import { request } from '../../__mock__/request'
 import launchRequest from '../../__mock__/launch-request.json'
 import sessionEndedRequest from '../../__mock__/session-ended-request.json'
 import informationRequest from '../../__mock__/information-request.json'
@@ -32,23 +32,13 @@ describe('Request handler', () => {
   })
 
   it('should run programHandler with filled slot', () => {
-    const mockSlotBack = {
-      name: 'Tag',
-      value: 'freitag',
-      resolutions: {
-        resolutionsPerAuthority: [
-          {
-            status: { code: 'ER_SUCCESS_MATCH' },
-            values: [{ value: { id: 'FRIDAY' } }]
-          }
-        ]
-      }
-    }
     const response = programHandler(
-      merge(
-        programRequest,
-        { request: { intent: { slots: { Tag: mockSlotBack } } } }
-      )
+      request()
+        .new(false)
+        .intent('GetProgram')
+        .slot('Tag', 'freitag', 'FRIDAY')
+        .dialogState('STARTED')
+        .valueOf()
     )
     expect(response).toMatchSnapshot()
   })

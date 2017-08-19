@@ -87,7 +87,12 @@ Object {
       "title": "Programm für Freitag, 1. September",
       "type": "Standard",
     },
-    "directives": Array [],
+    "directives": Array [
+      Object {
+        "slotToElicit": "Tag",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
     "outputSpeech": Object {
       "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>16 bis 20 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Festmeile</p><p>16 bis 24 Uhr <break time=\\"100ms\\" /> Bühnenprogramm</p><p>Welcher Tag interessiert Dich?</p></speak>",
       "type": "SSML",
