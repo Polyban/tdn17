@@ -5,7 +5,7 @@ Object {
   "response": Object {
     "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt. Nach 1983 und 2005 ist Wolfsburg nun zum dritten Mal Ausrichterstadt.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "ssml": "<speak><p>Der \\"Tag der Niedersachsen\\" ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.</p><p>Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.</p><p>Mit dem \\"Tag der Niedersachsen\\" feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.</p><p>Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
