@@ -8,6 +8,7 @@
     "lint": "eslint src/",
     "build": "webpack",
     "aws:publish": "./build/publish.sh",
+    "aws:publish-assets": "sh build/publish-assets.sh",
     "aws:update": "npm run build && npm run aws:publish"
   },
   "keywords": [],
