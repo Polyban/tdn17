@@ -150,7 +150,16 @@ class AlexaResponse {
       response.reprompt = reprompt
     }
     if (card !== null) {
-      response.card = card
+      const cardProps = {
+        ...card
+      }
+      /* eslint no-array-constructor: 0 */
+      Array('content', 'text').forEach((key) => {
+        if (cardProps[key] && Array.isArray(cardProps[key])) {
+          cardProps[key] = cardProps[key].join('\n')
+        }
+      })
+      response.card = cardProps
     }
     return response
   }

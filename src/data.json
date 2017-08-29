@@ -1,0 +1,71 @@
+{
+  "program": {
+    "FRIDAY": {
+      "utterances": [
+        "Programm für Freitag, 1. September",
+        "Ab 17:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic präsentiert von Radio Okerwelle, Hallenbad – Kultur am Schachtweg und der Musikschule Wolfsburg. (Ort: Bühne 1, Designer Outlets Wolfsburg)",
+        "Ab 18 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Radio38 mit der deutschsprachigen Pop-Band LUPID, die mit ihrem Mix aus modernen elektronischen Klängen und ihrem einzigartigen Sound überzeugt sowie die Jazzkantine, die mit der Kombination aus Jazz, Hip Hop und Rap ein breites Publikum anspricht. (Ort: Bühne 7, Hollerplatz)",
+        "20 bis 21 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die YouTube-Zwillinge und Teenager-Idole Die Lochis sorgen mit ihren Songs wie \"Ab geht’s\" und \"Lieblingslied\" für gute Laune. (Ort: Bühne 9, Grünfläche Planetarium)",
+        "20 bis 21:15  <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Marquess präsentiert von NDR 1 Niedersachsen (Ort: Bühne 2, Nordkopf)",
+        "20 bis 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Antenne Niedersachsen Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten. (Ort: Bühne 6, Rathausplatz)",
+        "Ab 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Der spanische Popsänger Alvaro Soler bringt mit seinen Songs \"El mismo sol\" und \"Sofia\" Latin-Beats nach Wolfsburg. (Ort: Bühne 6, Rathausplatz)"
+      ],
+      "card": {
+        "type": "Standard",
+        "title": "Programm für Freitag, 1. September",
+        "text": [
+          "16:00 bis 20:00 Uhr Festmeile",
+          "16:00 bis 24:00 Uhr Bühnenprogramm"
+        ],
+        "image": {
+          "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
+          "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.2x.png"
+        }
+      }
+    },
+    "SATURDAY": {
+      "utterances": [
+        "Programm für Samstag, 2. September",
+        "10 bis 20 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Festmeile",
+        "10 bis 24 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Bühnenprogramm",
+        "11:00 Uhr <break time=\"100ms\" /> Offizielle Eröffnungsfeier"
+      ],
+      "card": {
+        "type": "Standard",
+        "title": "Programm für Samstag, 2. September",
+        "text": [
+          "10:00 bis 20:00 Uhr Festmeile",
+          "10:00 bis 24:00 Uhr Bühnenprogramm",
+          "11:00 Uhr Offizielle Eröffnungsfeier auf der Bühne vor dem Rathaus."
+        ],
+        "image": {
+          "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.1x.png",
+          "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.2x.png"
+        }
+      }
+    },
+    "SUNDAY": {
+      "utterances": [
+        "Sonntag, 3. September",
+        "10 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Ökumenischer Gottesdienst",
+        "11 bis 18 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Festmeile",
+        "11 bis 19 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Bühnenprogramm",
+        "15:30 Uhr <break time=\"100ms\" /> Beginn des Trachten- und Festumzugs"
+      ],
+      "card": {
+        "type": "Standard",
+        "title": "Programm für Sonntag, 3. September",
+        "text": [
+          "10:00 Uhr Ökumenischer Gottesdienst auf der Bühne vor dem Rathaus.",
+          "11:00 bis 18:00 Uhr Festmeile",
+          "11:00 bis 19:00 Uhr Bühnenprogramm",
+          "15:30 Uhr Beginn des Trachten- und Festumzugs"
+        ],
+        "image": {
+          "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.1x.png",
+          "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.2x.png"
+        }
+      }
+    }
+  }
+}

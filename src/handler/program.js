@@ -2,28 +2,13 @@ import createLogger from 'debug'
 import {
   PROGRAM_INTRO_UTTERANCE,
   PROGRAM_DAY_PROMPT_UTTERANCE,
-  PROGRAM_DAY_REPROMPT_UTTERANCE,
-  PROGRAM_DAY_INTRO_UTTERANCE_FRIDAY,
-  PROGRAM_DAY_INTRO_UTTERANCE_SATURDAY,
-  PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
+  PROGRAM_DAY_REPROMPT_UTTERANCE
 } from '../constants'
 import { wrapIn } from '../util'
 import { elicit, getSlot } from '../alexa'
-import { PROGRAM_CARD_FRIDAY, PROGRAM_CARD_SATURDAY, PROGRAM_CARD_SUNDAY } from './cards'
+import { program } from '../data.json'
 
 const debug = createLogger('alexa:GetProgram')
-
-const daySpecificUtterances = {
-  FRIDAY: PROGRAM_DAY_INTRO_UTTERANCE_FRIDAY,
-  SATURDAY: PROGRAM_DAY_INTRO_UTTERANCE_SATURDAY,
-  SUNDAY: PROGRAM_DAY_INTRO_UTTERANCE_SUNDAY
-}
-
-const daySpecificCards = {
-  PROGRAM_CARD_FRIDAY,
-  PROGRAM_CARD_SATURDAY,
-  PROGRAM_CARD_SUNDAY
-}
 
 export default function programHandler({ request }) {
   const { slots } = request.intent
@@ -55,11 +40,11 @@ export default function programHandler({ request }) {
   debug('Requested canonicalSlot=%o', slot)
 
   // build output and emit
-  const speechOutput = daySpecificUtterances[slot.id]
+  const speechOutput = program[slot.id].utterances
     .concat(PROGRAM_DAY_PROMPT_UTTERANCE)
     .map(wrapIn('p')).join('')
 
-  const cardProps = daySpecificCards[`PROGRAM_CARD_${slot.id}`]
+  const { card: cardProps } = program[slot.id]
 
   return {
     response: elicit(speechOutput, 'Tag')
