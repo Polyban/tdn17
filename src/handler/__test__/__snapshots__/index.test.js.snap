@@ -79,8 +79,12 @@ Object {
         "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.2x.png",
         "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
       },
-      "text": "16:00 bis 20:00 Uhr Festmeile
-16:00 bis 24:00 Uhr Bühnenprogramm",
+      "text": "Ab 17:30 Uhr - Local Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic - Bühne 1 (Designer Outlets Wolfsburg)
+Ab 18:00 Uhr - Deutschsprachige Pop-Band LUPID & Jazzkantine - Bühne 7 (Hollerplatz)
+20:00 bis 21 Uhr - \\"Die Lochis\\" sorgen mit ihren Songs wie \\"Ab geht’s\\" und \\"Lieblingslied\\" für gute Laune. - Bühne 9 (Grünfläche Planetarium)
+20:00 bis 21:15 Uhr - Marquess - Bühne 2 (Nordkopf)
+20:00 bis 21:30 Uhr - Antenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten - Bühne 6 (Rathausplatz)
+Ab 21:30 Uhr - Der spanische Popsänger Alvaro Soler - Bühne 6  (Rathausplatz)",
       "title": "Programm für Freitag, 1. September",
       "type": "Standard",
     },
@@ -91,7 +95,7 @@ Object {
       },
     ],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>Ab 17:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic präsentiert von Radio Okerwelle, Hallenbad – Kultur am Schachtweg und der Musikschule Wolfsburg. (Ort: Bühne 1, Designer Outlets Wolfsburg)</p><p>Ab 18 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Radio38 mit der deutschsprachigen Pop-Band LUPID, die mit ihrem Mix aus modernen elektronischen Klängen und ihrem einzigartigen Sound überzeugt sowie die Jazzkantine, die mit der Kombination aus Jazz, Hip Hop und Rap ein breites Publikum anspricht. (Ort: Bühne 7, Hollerplatz)</p><p>20 bis 21 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die YouTube-Zwillinge und Teenager-Idole Die Lochis sorgen mit ihren Songs wie \\"Ab geht’s\\" und \\"Lieblingslied\\" für gute Laune. (Ort: Bühne 9, Grünfläche Planetarium)</p><p>20 bis 21:15  <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Marquess präsentiert von NDR 1 Niedersachsen (Ort: Bühne 2, Nordkopf)</p><p>20 bis 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Antenne Niedersachsen Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten. (Ort: Bühne 6, Rathausplatz)</p><p>Ab 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Der spanische Popsänger Alvaro Soler bringt mit seinen Songs \\"El mismo sol\\" und \\"Sofia\\" Latin-Beats nach Wolfsburg. (Ort: Bühne 6, Rathausplatz)</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>Ab 17:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic. Ort: Bühne 1 am Designer Outlets Wolfsburg</p><p>Ab 18 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die deutschsprachige Pop-Band LUPID sowie Jazzkantine. Ort: Bühne 7 am Hollerplatz</p><p>20 bis 21 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die YouTube-Zwillinge und Teenager-Idole \\"Die Lochis\\" sorgen mit ihren Songs für gute Laune. Ort: Bühne 9 auf der Grünfläche am Planetarium.</p><p>20 bis 21:15  <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Marquess präsentiert von NDR 1 Niedersachsen. Ort: Bühne 2, Nordkopf</p><p>20 bis 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Antenne-Niedersachsen-Party mit der Band Stilbruch. Ort: Bühne 6 am Rathausplatz</p><p>Ab 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Der spanische Popsänger Alvaro Soler auf der Bühne 6 am Rathausplatz</p><p>Welcher Tag interessiert Dich?</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {

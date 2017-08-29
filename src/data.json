@@ -3,19 +3,23 @@
     "FRIDAY": {
       "utterances": [
         "Programm für Freitag, 1. September",
-        "Ab 17:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic präsentiert von Radio Okerwelle, Hallenbad – Kultur am Schachtweg und der Musikschule Wolfsburg. (Ort: Bühne 1, Designer Outlets Wolfsburg)",
-        "Ab 18 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Radio38 mit der deutschsprachigen Pop-Band LUPID, die mit ihrem Mix aus modernen elektronischen Klängen und ihrem einzigartigen Sound überzeugt sowie die Jazzkantine, die mit der Kombination aus Jazz, Hip Hop und Rap ein breites Publikum anspricht. (Ort: Bühne 7, Hollerplatz)",
-        "20 bis 21 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die YouTube-Zwillinge und Teenager-Idole Die Lochis sorgen mit ihren Songs wie \"Ab geht’s\" und \"Lieblingslied\" für gute Laune. (Ort: Bühne 9, Grünfläche Planetarium)",
-        "20 bis 21:15  <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Marquess präsentiert von NDR 1 Niedersachsen (Ort: Bühne 2, Nordkopf)",
-        "20 bis 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Antenne Niedersachsen Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten. (Ort: Bühne 6, Rathausplatz)",
-        "Ab 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Der spanische Popsänger Alvaro Soler bringt mit seinen Songs \"El mismo sol\" und \"Sofia\" Latin-Beats nach Wolfsburg. (Ort: Bühne 6, Rathausplatz)"
+        "Ab 17:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic. Ort: Bühne 1 am Designer Outlets Wolfsburg",
+        "Ab 18 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die deutschsprachige Pop-Band LUPID sowie Jazzkantine. Ort: Bühne 7 am Hollerplatz",
+        "20 bis 21 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die YouTube-Zwillinge und Teenager-Idole \"Die Lochis\" sorgen mit ihren Songs für gute Laune. Ort: Bühne 9 auf der Grünfläche am Planetarium.",
+        "20 bis 21:15  <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Marquess präsentiert von NDR 1 Niedersachsen. Ort: Bühne 2, Nordkopf",
+        "20 bis 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Antenne-Niedersachsen-Party mit der Band Stilbruch. Ort: Bühne 6 am Rathausplatz",
+        "Ab 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Der spanische Popsänger Alvaro Soler auf der Bühne 6 am Rathausplatz"
       ],
       "card": {
         "type": "Standard",
         "title": "Programm für Freitag, 1. September",
         "text": [
-          "16:00 bis 20:00 Uhr Festmeile",
-          "16:00 bis 24:00 Uhr Bühnenprogramm"
+          "Ab 17:30 Uhr - Local Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic - Bühne 1 (Designer Outlets Wolfsburg)",
+          "Ab 18:00 Uhr - Deutschsprachige Pop-Band LUPID & Jazzkantine - Bühne 7 (Hollerplatz)",
+          "20:00 bis 21 Uhr - \"Die Lochis\" sorgen mit ihren Songs wie \"Ab geht’s\" und \"Lieblingslied\" für gute Laune. - Bühne 9 (Grünfläche Planetarium)",
+          "20:00 bis 21:15 Uhr - Marquess - Bühne 2 (Nordkopf)",
+          "20:00 bis 21:30 Uhr - Antenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten - Bühne 6 (Rathausplatz)",
+          "Ab 21:30 Uhr - Der spanische Popsänger Alvaro Soler - Bühne 6  (Rathausplatz)"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
@@ -26,17 +30,33 @@
     "SATURDAY": {
       "utterances": [
         "Programm für Samstag, 2. September",
-        "10 bis 20 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Festmeile",
-        "10 bis 24 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Bühnenprogramm",
-        "11:00 Uhr <break time=\"100ms\" /> Offizielle Eröffnungsfeier"
+        "11 bis 11:15 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Offizielle Eröffnungsfeier des 35. \"Tag der Niedersachsen\". Bühne 6, Rathausplatz",
+        "Ab 17 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Local-Heroes-Rockwettbewerb mit regionalen Bands. Bühne 1, Designer Outlets Wolfsburg",
+        "18:30 bis 20:45 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die Band \"The Esprits\" aus Niedersachsen. Bühne 7, Hollerplatz",
+        "19 bis 20:15 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die Sängerin Diana Babalola mit einer abwechslungsreiche Mischung aus Rock, Pop und Soul. Bühne 5, Pestalozziall<phoneme alphabet=\"ipa\" ph=\"eː\">ee</phoneme>",
+        "19 bis 21:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Gala des Sports, präsentiert vom \"LandesSportBund Niedersachsen\". Bühne 6, Rathausplatz",
+        "Ab 20 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> \"Hit Radio Show\", Musikshow mit 200 Stars und Kostümen. Bühne 2, Nordkopf",
+        "Ab 20:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" />  \"Sweety Glitter &amp; The Sweethearts\" hüllen ihre Rockmusik in Glitzer und Glamour wie in den 70ern. Bühne 5, Pestalozziall<phoneme alphabet=\"ipa\" ph=\"eː\">ee</phoneme>",
+        "Ab 21 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> \"Jupiter Jones\" mit reichlich Pop- und Rockmusik. Bühne 7, Hollerplatz",
+        "21:30 bis 22 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> \"Antenne-Niedersachsen-Party\" mit den Newcomern \"Warum Lila\", deutscher Indie-Rock-Pop aus Niedersachsen. Bühne 6, Rathausplatz",
+        "21:30 bis 22:15 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Sänger und Songwriter \"Johannes Oerding\" mit seinen neuen Songs aus dem Album \"Kreise\". Bühne 9, Grünfläche Planetarium",
+        "Ab 22 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Singer-Song-Writer \"Tim Bendzko\" bringt Hits wie \"Nur noch kurz die Welt retten\" und \"Keine Maschine\" mit. Bühne 6, Rathausplatz"
       ],
       "card": {
         "type": "Standard",
         "title": "Programm für Samstag, 2. September",
         "text": [
-          "10:00 bis 20:00 Uhr Festmeile",
-          "10:00 bis 24:00 Uhr Bühnenprogramm",
-          "11:00 Uhr Offizielle Eröffnungsfeier auf der Bühne vor dem Rathaus."
+          "11:00 bis 11:15 Uhr - Offizielle Eröffnungsfeier - Bühne 6 (Rathausplatz)",
+          "Ab 17 Uhr - Local-Heroes-Rockwettbewerb mit regionalen Bands - Bühne 1 (Designer Outlets Wolfsburg)",
+          "18:30 bis 20:45 Uhr - Band \"The Esprits aus Niedersachsen - Bühne 7 (Hollerplatz)",
+          "19:00 bis 20:15 Uhr - Sängerin \"Diana Babalola\" - Bühne 5 (Pestalozziallee)",
+          "19:00 bis 21:30 Uhr - Gala des Sports - Bühne 6 (Rathausplatz)",
+          "Ab 20 Uhr - Hit-Radio-Show - Bühne 2 (Nordkopf)",
+          "Ab 20:30 Uhr - \"Sweety Glitter & The Sweethearts\" - Bühne 5 (Pestalozziallee)",
+          "Ab 21 Uhr - Band \"Jupiter Jones\" - Bühne 7 (Hollerplatz)",
+          "21:30 bis 22:00 Uhr - Antenne-Niedersachsen-Party mit den Newcomern \"Warum Lila\" - Bühne 6 (Rathausplatz)",
+          "21:30 bis 22:15 Uhr - Sänger und Songwriter Johannes Oerding - Bühne 9 (Grünfläche Planetarium)",
+          "Ab 22 Uhr - Singer-Songwriter Tim Bendzko - Bühne 6 (Rathausplatz)"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.1x.png",
@@ -47,19 +67,17 @@
     "SUNDAY": {
       "utterances": [
         "Sonntag, 3. September",
-        "10 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Ökumenischer Gottesdienst",
-        "11 bis 18 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Festmeile",
-        "11 bis 19 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Bühnenprogramm",
-        "15:30 Uhr <break time=\"100ms\" /> Beginn des Trachten- und Festumzugs"
+        "10 bis 11 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Ökumenischer Festgottesdienst. Bühne 6, Rathausplatz",
+        "15:30 bis 17:30 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Trachten- und Festumzug durch die Wolfsburger Innenstadt",
+        "Ab 16:00 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> NDR LIVE-Übertragung des Trachten- und Festumzugs im Fernsehen"
       ],
       "card": {
         "type": "Standard",
         "title": "Programm für Sonntag, 3. September",
         "text": [
-          "10:00 Uhr Ökumenischer Gottesdienst auf der Bühne vor dem Rathaus.",
-          "11:00 bis 18:00 Uhr Festmeile",
-          "11:00 bis 19:00 Uhr Bühnenprogramm",
-          "15:30 Uhr Beginn des Trachten- und Festumzugs"
+          "10:00 bis 11:00 Uhr - Ökumenischer Festgottesdienst - Bühne 6 (Rathausplatz)",
+          "15:30 bis 17:30 Uhr - Trachten- und Festumzug durch die Wolfsburger Innenstadt",
+          "Ab 16:00 Uhr - NDR LIVE-Übertragung des Trachten- und Festumzugs im Fernsehen"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.1x.png",
