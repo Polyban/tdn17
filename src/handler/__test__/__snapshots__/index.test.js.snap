@@ -3,14 +3,34 @@
 exports[`Request handler should run informationHandler 1`] = `
 Object {
   "response": Object {
+    "card": Object {
+      "image": Object {
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+      },
+      "text": "Der Tag der Niedersachsen ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.
+Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.
+Mit dem Tag der Niedersachsen feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.
+Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.
+ • Der Tag der Niedersachsen 2017 findet zum 35. Mal statt.
+ • Nach 1983 und 2005 ist das Landesfest bereits zum dritten Mal in Wolfsburg.
+ • Rund 300 Vereine und Verbände präsentieren sich auf der Festmeile.
+ • Auf den 9 Bühnen finden Auftritte bekannter Künstler statt. Insgesamt gibt es ca. 250 Auftritte auf den Bühnen.
+ • Über 70 Catering Stände versorgen die Gäste.
+ • Mehr als 100 Vereine beteiligen sich am Fest- und Trachtenumzug.
+ • Zum TDN17 werden über 300.000 Gäste erwartet.
+ • Rund 100 ehrenamtliche Helfer unterstützen den TDN17 in Wolfsburg.",
+      "title": "Informationen",
+      "type": "Standard",
+    },
     "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Der \\"Tag der Niedersachsen\\" ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.</p><p>Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.</p><p>Mit dem \\"Tag der Niedersachsen\\" feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.</p><p>Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "ssml": "<speak><p>Der \\"Tag der Niedersachsen\\" ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.</p><p>Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.</p><p>Mit dem \\"Tag der Niedersachsen\\" feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.</p><p>Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.</p><p>Hier sind einige Fakten zum Tag der Niedersachsen:</p><p>Der Tag der Niedersachsen 2017 findet zum 35. Mal statt.</p><p>Nach 1983 und 2005 ist das Landesfest bereits zum dritten Mal in Wolfsburg.</p><p>Rund 300 Vereine und Verbände präsentieren sich auf der Festmeile.</p><p>Auf den 9 Bühnen finden Auftritte bekannter Künstler statt. Insgesamt gibt es ca. 250 Auftritte auf den Bühnen.</p><p>Über 70 Catering Stände versorgen die Gäste.</p><p>Mehr als 100 Vereine beteiligen sich am Fest- und Trachtenumzug.</p><p>Zum TDN17 werden über 300.000 Gäste erwartet.</p><p>Rund 100 ehrenamtliche Helfer unterstützen den TDN17 in Wolfsburg.</p><p>Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
       "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "ssml": "<speak>Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
         "type": "SSML",
       },
     },
@@ -27,18 +47,19 @@ Object {
         "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png",
         "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
       },
-      "text": "Sage \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
-      "title": "Willkommen zum 35. Tag der Niedersachsen im Jahr 2017",
+      "text": "Wolfsburg begrüßt Sie herzlich zum 35. Tag der Niedersachsen! Vom 1. bis 3. September 2017 ist das traditionelle Landesfest bereits zum dritten Mal in unserer jungen Stadt zu Gast. Auf der Festmeile in der Wolfsburger Innenstadt können Sie das kulturelle Leben Niedersachsens in all seinen Facetten erleben.
+Sagen Sie \\"Informationen\\" für Allgemeine Informationen oder \\"Programm\\" für eine Programmübersicht.",
+      "title": "Der Tag der Niedersachsen 2017 in Wolfsburg",
       "type": "Standard",
     },
     "directives": Array [],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Willkommen zum 35. \\"Tag der Niedersachsen\\" im Jahr 2017. <break /> Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
+      "ssml": "<speak><p>Wolfsburg begrüßt Sie herzlich zum 35. \\"Tag der Niedersachsen\\"! Vom 1. bis 3. September 2017 ist das traditionelle Landesfest bereits zum dritten Mal in unserer jungen Stadt zu Gast. Auf der Festmeile in der Wolfsburger Innenstadt können Sie das kulturelle Leben Niedersachsens in all seinen Facetten erleben.</p><p>Ich habe allgemeine Informationen oder eine Programmübersicht.</p><p>Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
       "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
+        "ssml": "<speak>Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.</speak>",
         "type": "SSML",
       },
     },
@@ -57,12 +78,12 @@ Object {
       },
     ],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "ssml": "<speak><p>Der Tag der Niedersachsen findet statt von Freitag den 1. bis Sonntag den 3. September.</p><p>Welcher Tag interessiert Sie?</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
       "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "ssml": "<speak>Sagen Sie <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
         "type": "SSML",
       },
     },
@@ -79,12 +100,24 @@ Object {
         "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.2x.png",
         "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
       },
-      "text": "Ab 17:30 Uhr - Local Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic - Bühne 1 (Designer Outlets Wolfsburg)
-Ab 18:00 Uhr - Deutschsprachige Pop-Band LUPID & Jazzkantine - Bühne 7 (Hollerplatz)
-20:00 bis 21 Uhr - \\"Die Lochis\\" sorgen mit ihren Songs wie \\"Ab geht’s\\" und \\"Lieblingslied\\" für gute Laune. - Bühne 9 (Grünfläche Planetarium)
-20:00 bis 21:15 Uhr - Marquess - Bühne 2 (Nordkopf)
-20:00 bis 21:30 Uhr - Antenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten - Bühne 6 (Rathausplatz)
-Ab 21:30 Uhr - Der spanische Popsänger Alvaro Soler - Bühne 6  (Rathausplatz)",
+      "text": "Ab 17:30 Uhr
+Local Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic
+Bühne 1 (Designer Outlets Wolfsburg)
+Ab 18:00 Uhr
+Deutschsprachige Pop-Band LUPID & Jazzkantine
+Bühne 7 (Hollerplatz)
+20:00 bis 21:00 Uhr
+\\"Die Lochis\\" sorgen mit ihren Songs wie \\"Ab geht’s\\" und \\"Lieblingslied\\" für gute Laune.
+Bühne 9 (Grünfläche Planetarium)
+20:00 bis 21:15 Uhr
+Marquess
+Bühne 2 (Nordkopf)
+20:00 bis 21:30 Uhr
+Antenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten
+Bühne 6 (Rathausplatz)
+Ab 21:30 Uhr
+Der spanische Popsänger Alvaro Soler
+Bühne 6  (Rathausplatz)",
       "title": "Programm für Freitag, 1. September",
       "type": "Standard",
     },
@@ -95,12 +128,12 @@ Ab 21:30 Uhr - Der spanische Popsänger Alvaro Soler - Bühne 6  (Rathausplatz)"
       },
     ],
     "outputSpeech": Object {
-      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>Ab 17:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic. Ort: Bühne 1 am Designer Outlets Wolfsburg</p><p>Ab 18 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die deutschsprachige Pop-Band LUPID sowie Jazzkantine. Ort: Bühne 7 am Hollerplatz</p><p>20 bis 21 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die YouTube-Zwillinge und Teenager-Idole \\"Die Lochis\\" sorgen mit ihren Songs für gute Laune. Ort: Bühne 9 auf der Grünfläche am Planetarium.</p><p>20 bis 21:15  <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Marquess präsentiert von NDR 1 Niedersachsen. Ort: Bühne 2, Nordkopf</p><p>20 bis 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Antenne-Niedersachsen-Party mit der Band Stilbruch. Ort: Bühne 6 am Rathausplatz</p><p>Ab 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Der spanische Popsänger Alvaro Soler auf der Bühne 6 am Rathausplatz</p><p>Welcher Tag interessiert Dich?</p></speak>",
+      "ssml": "<speak><p>Programm für Freitag, 1. September</p><p>Ab 17:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Local Heroes Warm Up mit Enemy Jack, Final Impact und Kyonic. Ort: Bühne 1 am Designer Outlets Wolfsburg</p><p>Ab 18 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die deutschsprachige Pop-Band LUPID sowie Jazzkantine. Ort: Bühne 7 am Hollerplatz</p><p>20 bis 21 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Die YouTube-Zwillinge und Teenager-Idole \\"Die Lochis\\" sorgen mit ihren Songs für gute Laune. Ort: Bühne 9 auf der Grünfläche am Planetarium.</p><p>20 bis 21:15  <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Marquess präsentiert von NDR 1 Niedersachsen. Ort: Bühne 2, Nordkopf</p><p>20 bis 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Antenne-Niedersachsen-Party mit der Band Stilbruch. Ort: Bühne 6 am Rathausplatz</p><p>Ab 21:30 <prosody pitch=\\"-10%\\">Uhr</prosody> <break time=\\"100ms\\" /> Der spanische Popsänger Alvaro Soler auf der Bühne 6 am Rathausplatz</p><p>Welcher Tag interessiert Sie?</p></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
       "outputSpeech": Object {
-        "ssml": "<speak>Sage <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
+        "ssml": "<speak>Sagen Sie <emphasis>Freitag</emphasis>, <emphasis>Samstag</emphasis> oder <emphasis>Sonntag</emphasis>.</speak>",
         "type": "SSML",
       },
     },

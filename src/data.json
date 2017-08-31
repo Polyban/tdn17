@@ -14,12 +14,12 @@
         "type": "Standard",
         "title": "Programm für Freitag, 1. September",
         "text": [
-          "Ab 17:30 Uhr - Local Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic - Bühne 1 (Designer Outlets Wolfsburg)",
-          "Ab 18:00 Uhr - Deutschsprachige Pop-Band LUPID & Jazzkantine - Bühne 7 (Hollerplatz)",
-          "20:00 bis 21 Uhr - \"Die Lochis\" sorgen mit ihren Songs wie \"Ab geht’s\" und \"Lieblingslied\" für gute Laune. - Bühne 9 (Grünfläche Planetarium)",
-          "20:00 bis 21:15 Uhr - Marquess - Bühne 2 (Nordkopf)",
-          "20:00 bis 21:30 Uhr - Antenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten - Bühne 6 (Rathausplatz)",
-          "Ab 21:30 Uhr - Der spanische Popsänger Alvaro Soler - Bühne 6  (Rathausplatz)"
+          "Ab 17:30 Uhr\nLocal Heroes Warm-Up mit Enemy Jack, Final Impact und Kyonic\nBühne 1 (Designer Outlets Wolfsburg)",
+          "Ab 18:00 Uhr\nDeutschsprachige Pop-Band LUPID & Jazzkantine\nBühne 7 (Hollerplatz)",
+          "20:00 bis 21:00 Uhr\n\"Die Lochis\" sorgen mit ihren Songs wie \"Ab geht’s\" und \"Lieblingslied\" für gute Laune.\nBühne 9 (Grünfläche Planetarium)",
+          "20:00 bis 21:15 Uhr\nMarquess\nBühne 2 (Nordkopf)",
+          "20:00 bis 21:30 Uhr\nAntenne-Niedersachsen-Party mit Stilbruch, akustische Pop/Rockmusik mit klassischen Instrumenten\nBühne 6 (Rathausplatz)",
+          "Ab 21:30 Uhr\nDer spanische Popsänger Alvaro Soler\nBühne 6  (Rathausplatz)"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-friday.1x.png",
@@ -30,7 +30,7 @@
     "SATURDAY": {
       "utterances": [
         "Programm für Samstag, 2. September",
-        "11 bis 11:15 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Offizielle Eröffnungsfeier des 35. \"Tag der Niedersachsen\". Bühne 6, Rathausplatz",
+        "Ab 11 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Offizielle Eröffnungsfeier des 35. \"Tag der Niedersachsen\". Bühne 6, Rathausplatz",
         "Ab 17 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Local-Heroes-Rockwettbewerb mit regionalen Bands. Bühne 1, Designer Outlets Wolfsburg",
         "18:30 bis 20:45 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die Band \"The Esprits\" aus Niedersachsen. Bühne 7, Hollerplatz",
         "19 bis 20:15 <prosody pitch=\"-10%\">Uhr</prosody> <break time=\"100ms\" /> Die Sängerin Diana Babalola mit einer abwechslungsreiche Mischung aus Rock, Pop und Soul. Bühne 5, Pestalozziall<phoneme alphabet=\"ipa\" ph=\"eː\">ee</phoneme>",
@@ -46,17 +46,17 @@
         "type": "Standard",
         "title": "Programm für Samstag, 2. September",
         "text": [
-          "11:00 bis 11:15 Uhr - Offizielle Eröffnungsfeier - Bühne 6 (Rathausplatz)",
-          "Ab 17 Uhr - Local-Heroes-Rockwettbewerb mit regionalen Bands - Bühne 1 (Designer Outlets Wolfsburg)",
-          "18:30 bis 20:45 Uhr - Band \"The Esprits aus Niedersachsen - Bühne 7 (Hollerplatz)",
-          "19:00 bis 20:15 Uhr - Sängerin \"Diana Babalola\" - Bühne 5 (Pestalozziallee)",
-          "19:00 bis 21:30 Uhr - Gala des Sports - Bühne 6 (Rathausplatz)",
-          "Ab 20 Uhr - Hit-Radio-Show - Bühne 2 (Nordkopf)",
-          "Ab 20:30 Uhr - \"Sweety Glitter & The Sweethearts\" - Bühne 5 (Pestalozziallee)",
-          "Ab 21 Uhr - Band \"Jupiter Jones\" - Bühne 7 (Hollerplatz)",
-          "21:30 bis 22:00 Uhr - Antenne-Niedersachsen-Party mit den Newcomern \"Warum Lila\" - Bühne 6 (Rathausplatz)",
-          "21:30 bis 22:15 Uhr - Sänger und Songwriter Johannes Oerding - Bühne 9 (Grünfläche Planetarium)",
-          "Ab 22 Uhr - Singer-Songwriter Tim Bendzko - Bühne 6 (Rathausplatz)"
+          "Ab 11:00 Uhr\nOffizielle Eröffnungsfeier\nBühne 6 (Rathausplatz)",
+          "Ab 17:00 Uhr\nLocal-Heroes-Rockwettbewerb mit regionalen Bands\nBühne 1 (Designer Outlets Wolfsburg)",
+          "18:30 bis 20:45 Uhr\nBand \"The Esprits aus Niedersachsen\nBühne 7 (Hollerplatz)",
+          "19:00 bis 20:15 Uhr\nSängerin \"Diana Babalola\"\nBühne 5 (Pestalozziallee)",
+          "19:00 bis 21:30 Uhr\nGala des Sports\nBühne 6 (Rathausplatz)",
+          "Ab 20 Uhr\nHit-Radio-Show\nBühne 2 (Nordkopf)",
+          "Ab 20:30 Uhr\n\"Sweety Glitter & The Sweethearts\"\nBühne 5 (Pestalozziallee)",
+          "Ab 21:00 Uhr\nBand \"Jupiter Jones\"\nBühne 7 (Hollerplatz)",
+          "21:30 bis 22:00 Uhr\nAntenne-Niedersachsen-Party mit den Newcomern \"Warum Lila\"\nBühne 6 (Rathausplatz)",
+          "21:30 bis 22:15 Uhr\nSänger und Songwriter Johannes Oerding\nBühne 9 (Grünfläche Planetarium)",
+          "Ab 22:00 Uhr\nSinger-Songwriter Tim Bendzko\nBühne 6 (Rathausplatz)"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-saturday.1x.png",
@@ -75,9 +75,9 @@
         "type": "Standard",
         "title": "Programm für Sonntag, 3. September",
         "text": [
-          "10:00 bis 11:00 Uhr - Ökumenischer Festgottesdienst - Bühne 6 (Rathausplatz)",
-          "15:30 bis 17:30 Uhr - Trachten- und Festumzug durch die Wolfsburger Innenstadt",
-          "Ab 16:00 Uhr - NDR LIVE-Übertragung des Trachten- und Festumzugs im Fernsehen"
+          "10:00 bis 11:00 Uhr\nÖkumenischer Festgottesdienst\nBühne 6 (Rathausplatz)",
+          "15:30 bis 17:30 Uhr\nTrachten- und Festumzug durch die Wolfsburger Innenstadt",
+          "Ab 16:00 Uhr\nNDR LIVE-Übertragung des Trachten- und Festumzugs im Fernsehen"
         ],
         "image": {
           "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-program-sunday.1x.png",
@@ -91,7 +91,58 @@
       "Der \"Tag der Niedersachsen\" ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.",
       "Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.",
       "Mit dem \"Tag der Niedersachsen\" feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.",
-      "Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live."
-    ]
+      "Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.",
+      "Hier sind einige Fakten zum Tag der Niedersachsen:",
+      "Der Tag der Niedersachsen 2017 findet zum 35. Mal statt.",
+      "Nach 1983 und 2005 ist das Landesfest bereits zum dritten Mal in Wolfsburg.",
+      "Rund 300 Vereine und Verbände präsentieren sich auf der Festmeile.",
+      "Auf den 9 Bühnen finden Auftritte bekannter Künstler statt. Insgesamt gibt es ca. 250 Auftritte auf den Bühnen.",
+      "Über 70 Catering Stände versorgen die Gäste.",
+      "Mehr als 100 Vereine beteiligen sich am Fest- und Trachtenumzug.",
+      "Zum TDN17 werden über 300.000 Gäste erwartet.",
+      "Rund 100 ehrenamtliche Helfer unterstützen den TDN17 in Wolfsburg."
+    ],
+    "reprompt": "Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.",
+    "card": {
+      "type": "Standard",
+      "title": "Informationen",
+      "text": [
+        "Der Tag der Niedersachsen ist ein traditionelles Fest des Landes, das seit 1981 jedes Mal in einer anderen Region Niedersachsens gefeiert wird. Seit 2015 findet er nur noch alle 2 Jahre statt.",
+        "Wilfrid Hasselmann, Niedersächsischer Minister für Bundes- und Europaangelegenheiten, hat das Fest in Celle etabliert.",
+        "Mit dem Tag der Niedersachsen feiert das Land seine Geschichte, Kultur und Vielfalt. Zahlreiche Vereine und Verbände präsentieren sich.",
+        "Unterstützt wird der TDN von niedersächsischen Radiosendern. Der NDR überträgt den traditionellen Festumzug live.",
+        " • Der Tag der Niedersachsen 2017 findet zum 35. Mal statt.",
+        " • Nach 1983 und 2005 ist das Landesfest bereits zum dritten Mal in Wolfsburg.",
+        " • Rund 300 Vereine und Verbände präsentieren sich auf der Festmeile.",
+        " • Auf den 9 Bühnen finden Auftritte bekannter Künstler statt. Insgesamt gibt es ca. 250 Auftritte auf den Bühnen.",
+        " • Über 70 Catering Stände versorgen die Gäste.",
+        " • Mehr als 100 Vereine beteiligen sich am Fest- und Trachtenumzug.",
+        " • Zum TDN17 werden über 300.000 Gäste erwartet.",
+        " • Rund 100 ehrenamtliche Helfer unterstützen den TDN17 in Wolfsburg."
+      ],
+      "image": {
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png"
+      }
+    }
+  },
+  "intro": {
+    "utterances": [
+      "Wolfsburg begrüßt Sie herzlich zum 35. \"Tag der Niedersachsen\"! Vom 1. bis 3. September 2017 ist das traditionelle Landesfest bereits zum dritten Mal in unserer jungen Stadt zu Gast. Auf der Festmeile in der Wolfsburger Innenstadt können Sie das kulturelle Leben Niedersachsens in all seinen Facetten erleben.",
+      "Ich habe allgemeine Informationen oder eine Programmübersicht."
+    ],
+    "reprompt": "Sagen Sie <emphasis>Informationen</emphasis> oder <emphasis>Programm</emphasis>.",
+    "card": {
+      "type": "Standard",
+      "title": "Der Tag der Niedersachsen 2017 in Wolfsburg",
+      "text": [
+        "Wolfsburg begrüßt Sie herzlich zum 35. Tag der Niedersachsen! Vom 1. bis 3. September 2017 ist das traditionelle Landesfest bereits zum dritten Mal in unserer jungen Stadt zu Gast. Auf der Festmeile in der Wolfsburger Innenstadt können Sie das kulturelle Leben Niedersachsens in all seinen Facetten erleben.",
+        "Sagen Sie \"Informationen\" für Allgemeine Informationen oder \"Programm\" für eine Programmübersicht."
+      ],
+      "image": {
+        "smallImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png",
+        "largeImageUrl": "https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png"
+      }
+    }
   }
 }

@@ -1,16 +1,12 @@
-import {
-  INTRO_PROMPT_UTTERANCE
-} from '../constants'
-import { wrapIn } from '../util'
 import { say } from '../alexa'
 import { information } from '../data.json'
 
 export default function informationHandler() {
   const speechOutput = information.utterances
-    .concat(INTRO_PROMPT_UTTERANCE)
-    .map(wrapIn('p')).join('')
+    .concat(information.reprompt)
   const response = say(speechOutput)
-    .reprompt(INTRO_PROMPT_UTTERANCE)
+    .reprompt(information.reprompt)
+    .card(information.card)
     .end(false)
     .valueOf()
 

@@ -1,5 +1,6 @@
 import createLogger from 'debug'
 import merge from 'deepmerge'
+import { wrapIn } from './util'
 
 const debug = createLogger('alexa:sdk')
 
@@ -74,10 +75,12 @@ function cardStandard(title, text, smallImageUrl, largeImageUrl) {
 
 function createUtterance(outputSpeech) {
   let type = 'PlainText'
-  let output = outputSpeech
-  if (/[<>]+/.exec(outputSpeech)) {
+  let output = Array.isArray(outputSpeech)
+    ? outputSpeech.map(wrapIn('p')).join('')
+    : outputSpeech
+  if (/[<>]+/.exec(output)) {
     type = 'SSML'
-    output = `<speak>${outputSpeech}</speak>`
+    output = `<speak>${output}</speak>`
   }
   return {
     type,

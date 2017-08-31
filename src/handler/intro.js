@@ -1,12 +1,9 @@
 import {
-  INTRO_UTTERANCE,
-  INTRO_PROMPT_UTTERANCE,
-  INTRO_CARD_TITLE,
-  INTRO_CARD_TEXT,
   SESSION_ENDED_UTTERANCE
 } from '../constants'
 import { wrapIn } from '../util'
 import { say } from '../alexa'
+import { intro } from '../data.json'
 
 export default function introHandler(type = 'full') {
   const typedIntroHandler = ({ session }) => {
@@ -17,13 +14,11 @@ export default function introHandler(type = 'full') {
       }
     }
 
-    const speechOutput = [
-      INTRO_PROMPT_UTTERANCE,
-    ]
-    const repromptText = INTRO_PROMPT_UTTERANCE
+    let speechOutput = [intro.reprompt]
+    const repromptText = intro.reprompt
 
     if (type === 'full') {
-      speechOutput.unshift(INTRO_UTTERANCE)
+      speechOutput = intro.utterances.concat(speechOutput)
     }
 
     let response = say(speechOutput.map(wrapIn('p')).join(''))
@@ -31,13 +26,7 @@ export default function introHandler(type = 'full') {
       .end(false)
 
     if (type === 'full') {
-      response = response.card(
-        'Standard',
-        INTRO_CARD_TITLE,
-        INTRO_CARD_TEXT,
-        'https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.1x.png',
-        'https://tdn17.s3-eu-west-1.amazonaws.com/card-intro.2x.png'
-      )
+      response = response.card(intro.card)
     }
 
     return { response: response.valueOf() }
